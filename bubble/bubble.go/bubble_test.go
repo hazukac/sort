@@ -8,5 +8,6 @@ import (
 )
 
 func TestSort(t *testing.T) {
-	Expect(t, utils.GetRandomArray(10)).ToBe([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+	src := utils.GetRandomArray(10)
+	Expect(t, Sort(src)).ToBe([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
 }
